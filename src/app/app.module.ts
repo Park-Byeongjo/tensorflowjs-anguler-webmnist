@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule} from '@angular/forms';
 
 import {AppRoutingModule} from './app-routing.module';
 
@@ -8,6 +9,7 @@ import { ChartsModule } from 'ng2-charts/';
 
 import {DrawableDirective} from './drawable.directive';
 import {ChartComponent} from './chart/chart.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import {ChartComponent} from './chart/chart.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        ChartsModule
+        ChartsModule,
+        FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
